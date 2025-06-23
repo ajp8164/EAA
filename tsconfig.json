@@ -1,3 +1,21 @@
 {
-  "extends": "@react-native/typescript-config"
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "baseUrl": "./src",
+    "checkJs": true,
+    "jsx": "react-native",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "components": ["./components/*", "./components/"],
+      "lib": ["./lib/*", "./lib/"],
+      "mocks": ["./mocks/*", "./mocks/"],
+      "store": ["./store/*", "./store/"],
+      "types": ["./types/*", "./types/"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.json"]
 }
