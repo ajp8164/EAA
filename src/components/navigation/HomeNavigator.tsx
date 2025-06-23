@@ -11,10 +11,15 @@ const HomeNavigator = () => {
       initialRouteName={'Home'}
       screenOptions={{
         title: undefined,
-        headerBackButtonDisplayMode: 'minimal',
       }}
     >
-      <HomeStack.Screen name="Home" component={HomeScreen} />
+      <HomeStack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          headerBackVisible: false,
+        }}
+      />
     </HomeStack.Navigator>
   );
 };

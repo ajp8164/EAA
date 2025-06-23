@@ -78,12 +78,10 @@ const s = StyleSheet.create({
     fontSize: 16,
   },
   container: {
-    // justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
   },
   form: {
-    // justifyContent: 'center',
     alignItems: 'center',
     width: '70%',
     position: 'absolute',
@@ -102,7 +100,6 @@ const s = StyleSheet.create({
     fontWeight: 'bold',
     position: 'absolute',
     top: '20%',
-    // marginBottom: 100,
   },
 });
 
